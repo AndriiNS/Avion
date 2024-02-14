@@ -1,0 +1,133 @@
+.footer {
+  padding: 60px;
+  background-color: #2a254b;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 70px 25px;
+  }
+  // .footer__top
+
+  &__top {
+    display: flex;
+    gap: 150px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 25px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      background-color: #4e4d93;
+      height: 1px;
+    }
+  }
+
+  // .footer__menu
+
+  // .footer__menu-title
+
+  &__menu-title {
+    line-height: 20px;
+    font-family: var(--font-accent);
+  }
+
+  // .footer__menu-list
+
+  &__menu-list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+  }
+
+  // .footer__menu-item
+
+  // .footer__menu-link
+
+  &__menu-link {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 12px;
+    line-height: 19px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: #beb4b4;
+    }
+  }
+
+  // .footer__categories
+
+  // .footer__form-title
+  &__form-input {
+    color: #fff;
+    padding: 17px 32px;
+    background: rgba(255, 255, 255, 0.15);
+    @media (max-width: 768px) {
+      width: 224px;
+    }
+  }
+  &__form-title {
+    padding-bottom: 16px;
+    line-height: 20px;
+    font-family: var(--font-accent);
+  }
+
+  // .footer__form-btn
+
+  &__form-btn {
+    padding: 16px 32px 16px 32px;
+    background-color: #fff;
+    color: #2a254b;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background-color: #beb4b4;
+    }
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .footer__bottom-copy
+
+  &__bottom-copy {
+    color: #fff;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  // .footer__bottom-list
+
+  // .footer__bottom-icons
+
+  &__bottom-icons {
+    display: flex;
+    gap: 24px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  // .footer__bottom-item
+
+  // .footer__bottom-link
+}
