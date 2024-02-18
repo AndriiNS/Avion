@@ -42,6 +42,10 @@
     padding-top: 72px;
     display: flex;
     justify-content: center;
+    @media (max-width: 425px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   // .benefits__input
@@ -59,5 +63,9 @@
     background-color: #2a254b;
     color: #fff;
     flex-shrink: 0;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background-color: #505977;
+    }
   }
 }

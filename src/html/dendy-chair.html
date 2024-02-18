@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avion</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css" />
+    <link rel="stylesheet" href="./fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="pocket">
+        <div class="container-left">
+          <div class="pocket__content">
+            <div class="pocket-img">
+              <picture>
+                <img src="./img/pocket.png" alt="" class="pocket-img__image" />
+              </picture>
+            </div>
+            <div class="pocket__info">
+              <div>
+                <h1 class="pocket__info-title">The Dandy Chair</h1>
+                <p class="pocket__info-price">£250</p>
+              </div>
+              <div>
+                <h3 class="pocket__info-descr">Description</h3>
+                <p class="pocket__info-text">
+                  A timeless design, with premium materials features as one of our most popular and
+                  iconic pieces. The dandy chair is perfect for any stylish living space with beech
+                  legs and lambskin leather upholstery.
+                </p>
+
+                <ul class="pocket__info-list">
+                  <li class="pocket__info-item">Premium material</li>
+                  <li class="pocket__info-item">Handmade upholstery</li>
+                  <li class="pocket__info-item">Quality timeless classic</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="pocket__info-demensions">Demensions</h3>
+                <div class="pocket__info-demensions-content">
+                  <div class="pocket__info-demensions-box">
+                    <h5 class="pocket__info-demensions-set">Height</h5>
+                    <p class="pocket__info-demensions-char">110cm</p>
+                  </div>
+                  <div class="pocket__info-demensions-box">
+                    <h5 class="pocket__info-demensions-set">Width</h5>
+                    <p class="pocket__info-demensions-char">75cm</p>
+                  </div>
+                  <div class="pocket__info-demensions-box">
+                    <h5 class="pocket__info-demensions-set">Depth</h5>
+                    <p class="pocket__info-demensions-char">50cm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pocket__info-counter">
+                <div class="counet-box">
+                  <h4 class="pocket__info-counter-amount">Amount:</h4>
+                  <div class="countering">
+                    <button id="increment">-</button>
+                    <p id="counter">1</p>
+                    <button id="decrement">+</button>
+                  </div>
+                </div>
+                <button class="counet-btn">Add to card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('blocks/ceramics.html') @@include('blocks/different.html')
+      @@include('blocks/benefits.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

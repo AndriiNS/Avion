@@ -14,3 +14,46 @@ $(document).ready(function () {
     $(this).text(buttonText === "View More" ? "Hide Collection" : "View More");
   });
 });
+
+//========================================================================================================================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const decrementButton = document.getElementById("increment");
+  const incrementButton = document.getElementById("decrement");
+  const counterElement = document.getElementById("counter");
+
+  let counterValue = 1;
+
+  function updateCounter() {
+    counterElement.textContent = counterValue;
+
+    if (counterValue === 0) {
+      // Disable decrement button when counter is 0
+      decrementButton.disabled = true;
+    } else {
+      decrementButton.disabled = false;
+    }
+
+    if (counterValue === 10) {
+      // Show maximum order message when counter reaches 10
+      alert("maximum order - 10");
+    }
+  }
+
+  decrementButton.addEventListener("click", function () {
+    if (counterValue > 0) {
+      counterValue--;
+      updateCounter();
+    }
+  });
+
+  incrementButton.addEventListener("click", function () {
+    if (counterValue < 10) {
+      counterValue++;
+      updateCounter();
+    }
+  });
+
+  // Initial counter update
+  updateCounter();
+});
