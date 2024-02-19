@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avion</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css" />
+    <link rel="stylesheet" href="./fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css" />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="main">
+      <section class="shopping">
+        <div class="container">
+          <div class="shopping-inner">
+            <h1 class="shopping__title">Your shopping cart</h1>
+            <div class="shopping__content">
+              <div class="shopping-text">
+                <h3 class="shopping-product">Product</h3>
+                <h3 class="shopping-quantity">Quantity</h3>
+                <h3 class="shopping-total">Total</h3>
+              </div>
+              <div class="shopping-for-line">
+                <div class="shopping-content__midl">
+                  <div class="shopping__item">
+                    <img src="./img/shopping/Product Image1.png" alt="img" />
+                    <div class="shopping__item-content">
+                      <h3 class="shopping__item-title">Graystone vase</h3>
+                      <p class="shopping__item-text">
+                        A timeless ceramic vase with a tri color grey glaze.
+                      </p>
+                      <p class="shopping__item-price">£85</p>
+                    </div>
+                  </div>
+                  <p class="shopping-quantity__number">1</p>
+                  <p class="shopping-quantity__price">£85</p>
+                </div>
+                <div class="shopping-content__midl">
+                  <div class="shopping__item">
+                    <img src="./img/shopping/Product Image2.png" alt="img" />
+                    <div class="shopping__item-content">
+                      <h3 class="shopping__item-title">Basic white vase</h3>
+                      <p class="shopping__item-text">
+                        Beautiful and simple this is one for the classics
+                      </p>
+                      <p class="shopping__item-price">£85</p>
+                    </div>
+                  </div>
+                  <p class="shopping-quantity__number">1</p>
+                  <p class="shopping-quantity__price">£125</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subtotal">
+            <div class="subtotal-box">
+              <h3 class="subtotal-title">Subtotal</h3>
+              <p class="subtotal__prise">£210</p>
+            </div>
+            <p class="subtotal__text">Taxes and shipping are calculated at checkout</p>
+            <button class="subtotal__btn">Go to checkout</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

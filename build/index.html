@@ -13,16 +13,51 @@
     <header class="header">
   <div class="container-fluid">
     <div class="header__row">
-      <div class="header__btn-search">
-        <a href="#"><img src="./img/icons/Search.svg" alt="search" /></a>
-        <button class="mobile-nav-btn">
-          <div class="nav-icon"></div>
-        </button>
-      </div>
-      <div class="logo"><a href="#">Avion</a></div>
-      <div class="header__box">
-        <a href="#"> <img src="./img/icons/Shopping--cart.svg" alt="shop" /></a>
-        <a href="#"><img src="./img/icons/User--avatar.svg" alt="user" /></a>
+      <div class="logo"><a href="./index.html">Avion</a></div>
+      <div class="header__pages">
+        <nav class="header__pages-nav">
+          <ul class="header__pages-list">
+            <li class="header__pages-item">
+              <a href="./index.html" class="header__pages-link">Home</a>
+            </li>
+            <li class="header__pages-item">
+              <a href="./about.html" class="header__pages-link">About</a>
+            </li>
+            <li class="header__pages-item">
+              <a href="./dendy-chair.html" class="header__pages-link">Product</a>
+            </li>
+            <li class="header__pages-item">
+              <a href="./product-list.html" class="header__pages-link">Product list</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__btn-search">
+          <a href="#"><img src="./img/icons/Search.svg" alt="search" /></a>
+          <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+          </button>
+        </div>
+        <div class="header__box">
+          <a href="./shopping-cart.html">
+            <img src="./img/icons/Shopping--cart.svg" alt="shop" />
+          </a>
+          <a href="#" id="userAvatar">
+            <img src="./img/icons/User--avatar.svg" alt="user" />
+          </a>
+        </div>
+        <div class="login-modal" id="loginModal">
+          <!-- HTML для вікна логіна -->
+          <form id="loginForm" class="login-form">
+            <label for="email" class="login-label">Email:</label>
+            <input type="email" id="email" name="email" class="login-input" required />
+
+            <label for="password" class="login-label">Password:</label>
+            <input type="password" id="password" name="password" class="login-input" required />
+
+            <button type="submit" class="login-button">Login</button>
+          </form>
+        </div>
       </div>
     </div>
     <span class="line"></span>
@@ -43,11 +78,10 @@
 </header>
 <div class="mobile-nav">
   <ul class="mobile-nav__list">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="#!">Services</a></li>
-    <li><a href="#!">About</a></li>
-    <li><a href="#!">Projects</a></li>
-    <li><a href="#!">Contact</a></li>
+    <li><a href="./index.html" class="active">Home</a></li>
+    <li><a href="./about.html" class="active">About</a></li>
+    <li><a href="./dendy-chair.html">Product</a></li>
+    <li><a href="#">Product list</a></li>
   </ul>
 </div>
 

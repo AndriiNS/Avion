@@ -57,3 +57,34 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial counter update
   updateCounter();
 });
+//========================================================================================================================================================
+$(document).ready(function () {
+  // Отримання елементів DOM за допомогою jQuery
+  var userAvatar = $("#userAvatar");
+  var loginModal = $("#loginModal");
+  var loginForm = $("#loginForm");
+
+  // Приховуємо вікно логіна при завантаженні сторінки
+  loginModal.hide();
+
+  // Обробник події для кліку на "User--avatar"
+  userAvatar.click(function () {
+    // Показуємо вікно логіна
+    loginModal.show();
+  });
+
+  // Обробка події для відправлення форми логіна
+  loginForm.submit(function (event) {
+    event.preventDefault();
+
+    // Отримання даних з форми
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    // Ваш код для взаємодії з сервером (наприклад, виклик AJAX-запиту)
+    // Тут ви можете викликати сервер для перевірки облікових даних та інших операцій
+
+    // При успішній автентифікації можна закрити вікно логіна
+    loginModal.hide();
+  });
+});
