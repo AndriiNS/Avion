@@ -60,9 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
 //========================================================================================================================================================
 $(document).ready(function () {
   // Отримання елементів DOM за допомогою jQuery
-  var userAvatar = $("#userAvatar");
-  var loginModal = $("#loginModal");
-  var loginForm = $("#loginForm");
+  const userAvatar = $("#userAvatar");
+  const loginModal = $("#loginModal");
+  const loginForm = $("#loginForm");
+  const loginClose = $("#login-modal__close");
 
   // Приховуємо вікно логіна при завантаженні сторінки
   loginModal.hide();
@@ -71,6 +72,10 @@ $(document).ready(function () {
   userAvatar.click(function () {
     // Показуємо вікно логіна
     loginModal.show();
+
+    loginClose.click(() => {
+      loginModal.hide();
+    });
   });
 
   // Обробка події для відправлення форми логіна
